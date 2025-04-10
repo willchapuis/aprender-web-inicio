@@ -4,14 +4,9 @@ Este repositório contém meu progresso em uma trilha de aprendizado para desenv
 
 ---
 
-## 📌 Objetivo
-Aprender passo a passo os fundamentos da web até chegar na criação de um portfólio completo, usando tecnologias como **HTML**, **CSS**, **JavaScript** e **React**.
-
----
-
 ## 📚 Estrutura por Etapas
 
-### ✅ Etapa 1 - Primeiros passos com Web (HTML + CSS básico)
+### 🔄 Etapa 1 - Primeiros passos com Web (HTML + CSS básico)
 > `etapa-1/`
 - Hello World com HTML
 - Estrutura básica de uma página
@@ -43,7 +38,21 @@ Aprender passo a passo os fundamentos da web até chegar na criação de um port
 
 ### ✅ ~~Etapa 6 - Git e GitHub básico~~
 > ~~`etapa-6/`~~  
-> ❌ Etapa pulada (já possuo domínio de versionamento com Git/GitHub)  
+> ❌ Etapa pulada (já possuo conhecimento de versionamento com Git/GitHub)  
+
+---
+
+## 🎯 Objetivo
+Aprender passo a passo os fundamentos da web até chegar na criação de um **portfólio completo**, usando tecnologias como **HTML**, **CSS**, **JavaScript** e **React**.
+Criando assim um **portfólio profissional** com sessões sobre meu perfil, experiencias, skills e projetos trabalhados utilizando de animações, responsividade e um visual moderno.
+
+---
+
+## 🔖 Legenda dos Status
+
+✅ Concluído
+🔄 Em andamento - Etapa atual: **Etapa 1 – Primeiros estilos com CSS**  
+⏳ A fazer
 
 ---
 
@@ -55,19 +64,6 @@ Aprender passo a passo os fundamentos da web até chegar na criação de um port
 - React (futuramente)
 - Git e GitHub
 - Visual Studio Code
-
----
-
-## 💼 Objetivo final
-
-Criar um **portfólio profissional** com projetos reais, animações, responsividade e um visual moderno.
-
----
-
-## ✨ Status
-
-🟩 Etapa atual: **Etapa 1 – HTML básico**  
-🔜 Próxima: **Textos, imagens, links e estrutura completa de página**
 
 ---
 
