@@ -1,0 +1,33 @@
+/* Define estilos para o body*/
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Estilo para h1 (titulo) */
+h1 {
+    color: #007acc;
+    font-size: 36px;
+}
+
+/* Estilo para p (paragrafo) */
+p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para a (link) */
+a {
+    color: white;
+    background-color: #007acc;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #005fa3;
+}
