@@ -1,33 +1,46 @@
-/* Define estilos para o body*/
+/* Estilos para body*/
 body {
-    background-color: #f0f0f0;
+    background-color: #a5d9f7;
     color: #333;
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 50px;
 }
 
-/* Estilo para h1 (titulo) */
+/* Estilo para titulo (h1) */
 h1 {
     color: #007acc;
     font-size: 36px;
 }
 
-/* Estilo para p (paragrafo) */
+/* Estilo para paragrafo (p) */
 p {
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-/* Estilo para a (link) */
-a {
-    color: white;
-    background-color: #007acc;
+/* Estilo para os links (li a) */
+li a {
+    display: inline-block; /* Garante que o espaço não empilhe sobre outro */
+    margin: 5px;
     padding: 10px 20px;
+    background-color: #007acc;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-a:hover {
+/* Estilo para link (a) */
+li a:hover {
     background-color: #005fa3;
+}
+
+/* Estilo para ul e ol */
+ul, ol {
+    list-style-position: inside; /* Faz com que os números ou marcadores fiquem dentro da área da lista */
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
 }
