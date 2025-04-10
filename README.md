@@ -44,6 +44,7 @@ Este repositório contém meu progresso em uma trilha de aprendizado para desenv
 
 ## 🎯 Objetivo
 Aprender passo a passo os fundamentos da web até chegar na criação de um **portfólio completo**, usando tecnologias como **HTML**, **CSS**, **JavaScript** e **React**.
+
 Criando assim um **portfólio profissional** com sessões sobre meu perfil, experiencias, skills e projetos trabalhados utilizando de animações, responsividade e um visual moderno.
 
 ---
@@ -51,7 +52,9 @@ Criando assim um **portfólio profissional** com sessões sobre meu perfil, expe
 ## 🔖 Legenda dos Status
 
 ✅ Concluído
+
 🔄 Em andamento - Etapa atual: **Etapa 1 – Primeiros estilos com CSS**  
+
 ⏳ A fazer
 
 ---
