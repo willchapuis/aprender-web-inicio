@@ -1,0 +1,75 @@
+/* Estilo para body*/
+body {
+    background-color: #a5d9f7;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.2;
+
+    /* Estilo para a classe container dentro do body */
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 5px;
+        background-color: #caeafc;
+        border-radius: 8px; /* Arredondar quinas */
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Efeito de sombra ao redor */
+    }
+}
+
+/* Estilo para titulo (h1) */
+h1 {
+    color: #007acc;
+    font-size: 36px;
+    /* margin-bottom: 10px; */
+}
+
+/* Estilo para titulo (h2) */
+/* h2 {
+    margin-bottom: 10px;
+} */
+
+/* Estilo para paragrafo (p) */
+p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os links (li) */
+li {
+    a {
+        display: inline-block; /* Garante que o espaço não empilhe sobre outro */
+        margin: 5px;
+        padding: 10px 20px;
+        background-color: #007acc;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Enquanto mouse estiver em cima */
+    a:hover {
+        background-color: #005fa3;
+        text-decoration: underline;
+    }
+}
+
+/* Estilo para ul e ol */
+ul, ol {
+    list-style-position: inside; /* Faz com que os números ou marcadores fiquem dentro da área da lista */
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+}
+
+/* Estilo para o ul dentro da classe links */
+.links ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
