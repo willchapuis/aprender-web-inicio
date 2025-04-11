@@ -6,13 +6,13 @@ Este repositório contém meu progresso em uma trilha de aprendizado para desenv
 
 ## 📚 Estrutura por Etapas
 
-### 🔄 Etapa 1 - Primeiros passos com Web (HTML + CSS básico)
+### ✅ Etapa 1 - Primeiros passos com Web (HTML + CSS básico)
 > `etapa-1/`
 - Hello World com HTML
 - Estrutura básica de uma página
 - Primeiros estilos com CSS
 
-### ⏳ Etapa 2 - Fundamentos essenciais
+### 🔄 Etapa 2 - Fundamentos essenciais
 > `etapa-2/`
 - Layout com Flexbox e Grid
 - HTML semântico
@@ -53,7 +53,7 @@ Criando assim um **portfólio profissional** com sessões sobre meu perfil, expe
 
 ✅ Concluído
 
-🔄 Em andamento - Etapa atual: **Etapa 1 – Primeiros estilos com CSS**  
+🔄 Em andamento - Etapa atual: **Etapa 2 - Fundamentos essenciais**  
 
 ⏳ A fazer
 
