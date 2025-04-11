@@ -1,10 +1,17 @@
-/* Estilos para body*/
+/* Estilo para body*/
 body {
     background-color: #a5d9f7;
     color: #333;
     font-family: Arial, sans-serif;
     text-align: center;
-    padding: 50px;
+    padding: 20px;
+
+    /* Estilo para a classe container dentro do body */
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 10px;
+    }
 }
 
 /* Estilo para titulo (h1) */
@@ -31,7 +38,7 @@ li a {
     transition: background-color 0.3s ease;
 }
 
-/* Estilo para link (a) */
+/* Estilo para link (a) enquanto mouse estiver em cima */
 li a:hover {
     background-color: #005fa3;
 }
@@ -43,4 +50,13 @@ ul, ol {
     margin: 0 auto;
     display: inline-block;
     text-align: left;
+}
+
+/* Estilo para o ul dentro da classe links */
+.links ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
 }
