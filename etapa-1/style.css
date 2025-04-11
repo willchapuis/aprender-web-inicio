@@ -2,15 +2,19 @@
 body {
     background-color: #a5d9f7;
     color: #333;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+    line-height: 1.2;
 
     /* Estilo para a classe container dentro do body */
     .container {
         max-width: 800px;
         margin: 0 auto;
-        padding: 10px;
+        padding: 5px;
+        background-color: #caeafc;
+        border-radius: 8px; /* Arredondar quinas */
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Efeito de sombra ao redor */
     }
 }
 
@@ -18,7 +22,13 @@ body {
 h1 {
     color: #007acc;
     font-size: 36px;
+    /* margin-bottom: 10px; */
 }
+
+/* Estilo para titulo (h2) */
+/* h2 {
+    margin-bottom: 10px;
+} */
 
 /* Estilo para paragrafo (p) */
 p {
@@ -26,21 +36,24 @@ p {
     margin-bottom: 20px;
 }
 
-/* Estilo para os links (li a) */
-li a {
-    display: inline-block; /* Garante que o espaço não empilhe sobre outro */
-    margin: 5px;
-    padding: 10px 20px;
-    background-color: #007acc;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
+/* Estilo para os links (li) */
+li {
+    a {
+        display: inline-block; /* Garante que o espaço não empilhe sobre outro */
+        margin: 5px;
+        padding: 10px 20px;
+        background-color: #007acc;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
 
-/* Estilo para link (a) enquanto mouse estiver em cima */
-li a:hover {
-    background-color: #005fa3;
+    /* Enquanto mouse estiver em cima */
+    a:hover {
+        background-color: #005fa3;
+        text-decoration: underline;
+    }
 }
 
 /* Estilo para ul e ol */
