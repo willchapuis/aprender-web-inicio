@@ -1,0 +1,30 @@
+body
+{
+    background-color: #a5d9f7;
+
+    .flex-container {
+        display: flex;
+        justify-content: space-around; /* center, space-between, flex-end */
+        align-items: center;
+        gap: 20px;
+        background-color: #caeafc;
+        padding: 20px;
+        flex-direction: column;
+        border-radius: 8px; /* Arredondar quinas */
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Efeito de sombra ao redor */
+    }
+    
+    .box {
+        background-color: #5fa4fd;
+        padding: 20px;
+        width: 100px;
+        text-align: center;
+    }
+}
+
+.centralizado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
