@@ -1,4 +1,4 @@
-# 🌐 Trilha de Aprendizado Web – Do Básico ao Portfólio 🚀
+# 🌐 Trilha de Aprendizado Web 🚀
 
 Este repositório contém meu progresso em uma trilha de aprendizado para desenvolvimento web com foco em **Frontend**, com o objetivo final de criar um **portfólio profissional** moderno, interativo e responsivo.
 
