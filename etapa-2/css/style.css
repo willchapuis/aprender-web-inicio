@@ -1,21 +1,36 @@
 body
 {
-    display: grid;
-    grid-template-areas:                        /* Define as areas nomeadas no grid */
-        "header header header"
-        "nav main aside"
-        "footer footer footer";
-    grid-template-columns: 200px 1fr 200px;     /*Define larguda das colunas (nav - main - aside) */
-    grid-template-rows: auto 1fr auto;          /* Altura das linhas (header - conteúdo - footer) */ /* 1fr usar o espaço restante proporcionalmente */
     background-color: #a5d9f7;
     font-family: sans-serif;
     margin: 0;
-    /* padding: 0; */
-    height: 100vh;                              /* Faz a altura ocupar toda a tela */
+    height: 100vh;                                  /* Faz a altura ocupar toda a tela */
     /* text-align: center; */
 
+    main {
+        display: flex;                              /* Coloca os elementos lado a lado */
+        gap: 20px;                                  /* Espaço entre as colunas */
+        padding: 20px;
+    }
+
+    .coluna {
+        flex: 1;                                    /* Faz com que as colunas ocupem o mesmo espaço */
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: #f2f2f2;
+    }
+
+    /* Responsividade: quando a tela for menor que 600px */
+    @media (max-width: 600px) {
+        main {
+            flex-direction: column;
+        }
+
+        .coluna {
+            background-color: #e485f7;
+        }
+    }
+
     header {
-        grid-area: header;
         padding: 1rem;
         text-align: center;
         color: white;
@@ -23,48 +38,9 @@ body
     }
     
     footer {
-        grid-area: footer;
         background-color: #333;
         color: white;
         text-align: center;
         padding: 1rem;
-    }
-    
-    nav {
-        display: flex;
-        justify-content: space-around; /* center, space-between, flex-end */
-        align-items: center;
-        background-color: #555;
-        padding: 0.5rem;
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-    }
-    
-    nav ul {
-        display: flex;
-        justify-content: center;
-        list-style: none;                       /* Estilo da "numeração" dos itens da lista | none -> nada na frente de cada item */
-        padding: 0;
-    }
-    
-    nav li {
-        margin: 0.5rem;
-    }
-    
-    nav a {
-        color: white;
-    }
-    
-    main {
-        grid-area: main;
-        padding: 1rem;
-        background-color: #f1f1f1;
-    }
-
-    aside {
-        grid-area: aside;
-        padding: 1rem;
-        background-color: #e0e0e0;
     }
 }
