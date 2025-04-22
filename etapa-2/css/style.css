@@ -3,34 +3,55 @@ body
     background-color: #a5d9f7;
     font-family: sans-serif;
     margin: 0;
-    height: 100vh;                                  /* Faz a altura ocupar toda a tela */
-    /* text-align: center; */
 
     main {
-        display: flex;                              /* Coloca os elementos lado a lado */
-        gap: 20px;                                  /* Espaço entre as colunas */
         padding: 20px;
-    }
+        text-align: center;
 
-    .coluna {
-        flex: 1;                                    /* Faz com que as colunas ocupem o mesmo espaço */
-        border: 1px solid #ccc;
-        padding: 10px;
-        background-color: #f2f2f2;
+        .container {                                   /* Faz com que as colunas ocupem o mesmo espaço */
+            display: grid;                              /* Coloca os elementos lado a lado */
+            grid-template-areas: 
+                "box1 box2 box3";
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            gap: 20px;
+
+            .box1 {
+                grid-area: box1;
+                padding: 1rem;
+                border: 1px solid #615858;
+            }
+
+            .box2 {
+                grid-area: box2;
+                padding: 1rem;
+                border: 1px solid #615858;
+            }
+
+            .box3 {
+                grid-area: box3;
+                padding: 1rem;
+                border: 1px solid #615858;
+            }
+        }
     }
 
     /* Responsividade: quando a tela for menor que 600px */
     @media (max-width: 600px) {
         main {
-            flex-direction: column;
-        }
-
-        .coluna {
-            background-color: #e485f7;
+            .container {
+                grid-template-areas: 
+                    "box1"
+                    "box2"
+                    "box3";
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 1fr);
+            }
         }
     }
 
     header {
+        grid-area: header;
         padding: 1rem;
         text-align: center;
         color: white;
@@ -38,6 +59,7 @@ body
     }
     
     footer {
+        grid-area: footer;
         background-color: #333;
         color: white;
         text-align: center;
