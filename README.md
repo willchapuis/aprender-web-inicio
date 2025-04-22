@@ -15,7 +15,7 @@ Este repositório contém meu progresso em uma trilha de aprendizado para desenv
 - Identificadores (class, id) e boas práticas iniciais  
 - Estruturação semântica da página  
 
-### 🔄 Etapa 2 – Estrutura e Layout Responsivo  
+### ✅ Etapa 2 – Estrutura e Layout Responsivo  
 > `github.com/willchapuis/aprender-web-inicio/etapa-2/`  
 - Layout com Flexbox e Grid  
 - HTML Semântico  
@@ -25,7 +25,7 @@ Este repositório contém meu progresso em uma trilha de aprendizado para desenv
 - Navegação entre páginas com `<a>`  
 - Uso básico do DevTools  
 
-### ⏳ Etapa 3 – Boas práticas e estilos avançados  
+### 🔄 Etapa 3 – Boas práticas e estilos avançados  
 > `github.com/willchapuis/aprender-web-inicio/etapa-3/`  
 - Boas práticas de escrita CSS  
 - Introdução ao SCSS (variáveis, mixins, aninhamento)  
