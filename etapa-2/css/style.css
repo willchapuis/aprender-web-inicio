@@ -16,27 +16,14 @@ body
             grid-template-rows: 1fr;
             gap: 20px;
 
-            .box1 {
-                grid-area: box1;
-                padding: 1rem;
-                border: 1px solid #615858;
-            }
-
-            .box2 {
-                grid-area: box2;
-                padding: 1rem;
-                border: 1px solid #615858;
-            }
-
-            .box3 {
-                grid-area: box3;
+            .box1, .box2, .box3 {
                 padding: 1rem;
                 border: 1px solid #615858;
             }
         }
     }
 
-    /* Responsividade: quando a tela for menor que 600px */
+    /* Responsividade */
     @media (max-width: 600px) {
         main {
             .container {
