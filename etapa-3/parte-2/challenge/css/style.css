@@ -6,7 +6,9 @@
     border-radius: 8px;
     box-shadow: 4px 4px 5px rgba(0,0,0,0.1);
     opacity: 0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /*  transition são mudanças que acontecem em algum evento
+                                                                quando transform ou box-shadow mudar, aplicar estilo ease com duração de 0.3s */
+    /* transition: propriedade duração estilo-de-animação */
 }
 
 .card:hover {
@@ -17,7 +19,8 @@
 @keyframes fadeIn {
     from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(30px); /* transform são mudanças na aparência do elemento (escala, rotação, etc)
+                                    translateY move no eixo Y */
     }
     to {
     opacity: 1;
@@ -26,5 +29,7 @@
 }
 
 .aparecer {
-    animation: fadeIn 1.5s ease-out forwards;
+    animation: fadeIn 1.5s ease-out forwards;   /*  animation são animações que acontecem sozinhas
+                                                    forwards mantem o último estado da animação (para não voltar ao estado inicial) */
+    /* animation: nome-da-keyframe duração estilo-de-animação direção */
 }
