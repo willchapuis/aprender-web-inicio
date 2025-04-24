@@ -1,0 +1,30 @@
+.card {
+    width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.2);
+    scale: 1.2;
+}
+
+@keyframes fadeIn {
+    from {
+    opacity: 0;
+    transform: translateY(30px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+.aparecer {
+    animation: fadeIn 1.5s ease-out forwards;
+}
