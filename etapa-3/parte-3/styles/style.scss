@@ -1,0 +1,59 @@
+$breakpoint-sm: 480px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+
+$cor-header: #333;
+$cor-fundo: #f2f2f2;
+
+// Mixin reutilizável para media queries. sm para telas pequenas, md para medias, e lg para grandes
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == sm {
+      @media (min-width: $breakpoint-sm) { @content; }
+    } @else if $breakpoint == md {
+      @media (min-width: $breakpoint-md) { @content; }
+    } @else if $breakpoint == lg {
+      @media (min-width: $breakpoint-lg) { @content; }
+    }
+}
+
+body {
+    font-family: sans-serif;
+    background-color: $cor-fundo;
+    
+    .container {
+        display: flex;
+        flex-direction: column; /* mobile first */
+        padding: 1rem;
+        gap: 1rem;
+
+        @include respond-to(md) {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+
+    .caixa {
+        background-color: white;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+
+        @include respond-to(md) {
+            width: 45%;
+        }
+    }
+}
+
+header, footer {
+    background-color: $cor-header;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
