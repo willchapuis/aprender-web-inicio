@@ -1,0 +1,61 @@
+@use '../base/variaveis' as *;
+@use '../base/mixins' as *;
+@use '../base/animacoes' as *;
+
+body {
+    font-family: sans-serif;
+    background-color: $cor-fundo;
+
+    .equipe {
+        display: grid;
+        padding: 1rem;
+        gap: 1rem;
+    
+        @include respond-to(md) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include respond-to(lg) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .card {
+        display: grid;
+        grid-template-areas: 
+            "imagem nome"
+            "imagem nome"
+            "cargo cargo";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+
+        background-color: rgb(101, 183, 250);
+        padding: 1.5rem;
+        border-radius: 20px;
+        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+
+        .imagem {
+            grid-area: imagem;
+            justify-self: center;
+        }
+
+        .nome {
+            grid-area: nome;
+        }
+
+        .cargo {
+            grid-area: cargo;
+            justify-self: center;
+        }
+    }
+
+    .aparecer {
+        animation: fadeIn 1.5s ease-in-out forwards;
+    }
+
+    .card:hover {
+        box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
+        scale: 1.05;
+    }
+}
