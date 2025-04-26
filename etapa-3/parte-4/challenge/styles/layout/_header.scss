@@ -1,0 +1,8 @@
+@use '../base/variaveis' as *;
+
+header {
+    background-color: $cor-header;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
