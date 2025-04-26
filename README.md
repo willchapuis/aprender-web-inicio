@@ -25,7 +25,7 @@ Este repositório contém meu progresso em uma trilha de aprendizado para desenv
 - Navegação entre páginas com `<a>`  
 - Uso básico do DevTools  
 
-### 🔄 Etapa 3 – Boas práticas e estilos avançados  
+### ✅ Etapa 3 – Boas práticas e estilos avançados  
 > `github.com/willchapuis/aprender-web-inicio/etapa-3/`  
 - Boas práticas de escrita CSS  
 - Introdução ao SCSS (variáveis, mixins, aninhamento)  
@@ -33,7 +33,7 @@ Este repositório contém meu progresso em uma trilha de aprendizado para desenv
 - Responsividade refinada com SCSS  
 - Modularização de estilos  
 
-### ⏳ Etapa 4 – JavaScript Básico e Interatividade  
+### 🔄 Etapa 4 – JavaScript Básico e Interatividade  
 > `github.com/willchapuis/aprender-web-inicio/etapa-4/`  
 - Lógica JS (variáveis, operadores, loops, funções)  
 - Manipulação do DOM  
