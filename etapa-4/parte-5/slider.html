@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Interações simples (tema, menu, sliders)</title>
+</head>
+<body>
+    <img id="slide" src="https://placehold.co/300x200?text=1" width="300">
+    <br>
+    <button onclick="voltar()">◀</button>
+    <button onclick="avancar()">▶</button>
+
+    <script>
+    // Lista de URLs das imagens
+    let imagens = [
+        "https://placehold.co/300x200?text=1",
+        "https://placehold.co/300x200?text=2",
+        "https://placehold.co/300x200?text=3"
+    ];
+
+    let indice = 0;
+
+    function avancar() {
+        indice = (indice + 1) % imagens.length;
+        document.getElementById("slide").src = imagens[indice];
+    }
+
+    function voltar() {
+        indice = (indice - 1 + imagens.length) % imagens.length;
+        document.getElementById("slide").src = imagens[indice];
+    }
+    </script>
+</body>
+</html>
