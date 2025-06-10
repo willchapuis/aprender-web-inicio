@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Interações simples (tema, menu, sliders)</title>
+</head>
+<body>
+    <button onclick="toggleMenu()">☰ Menu</button>
+
+    <nav id="menu" style="display: none;">
+    <a href="#">Início</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contato</a>
+    </nav>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+</html>

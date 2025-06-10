@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Interações simples (tema, menu, sliders)</title>
+  <style>
+    body {
+        background-color: white;
+        color: black;
+        transition: 0.3s;
+    }
+
+    body.escuro {
+        background-color: #121212;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <h1>Modo Claro / Escuro</h1>
+    <button onclick="alternarTema()">Alterar tema</button>
+
+    <script>
+        function alternarTema() {
+            document.body.classList.toggle("escuro");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Validação de Formulário</title>
+  <style>
+    .erro {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Formulário de Contato</h2>
+
+  <form onsubmit="return validarFormulario()">
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome"><br>
+    <span id="erroNome" class="erro"></span><br>
+
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email"><br>
+    <span id="erroEmail" class="erro"></span><br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script>
+    function validarFormulario() {
+      const nome = document.getElementById("nome").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const erroNome = document.getElementById("erroNome");
+      const erroEmail = document.getElementById("erroEmail");
+
+      let valido = true;
+
+      // Resetando mensagens de erro
+      erroNome.innerText = "";
+      erroEmail.innerText = "";
+
+      // Verifica nome vazio
+      if (nome === "") {
+        erroNome.innerText = "Nome é obrigatório.";
+        valido = false;
+      }
+
+      // Verifica email válido
+      const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (email === "") {
+        erroEmail.innerText = "Email é obrigatório.";
+        valido = false;
+      } else if (!regexEmail.test(email)) {
+        erroEmail.innerText = "Formato de email inválido.";
+        valido = false;
+      }
+
+      return valido; // true: envia | false: bloqueia
+    }
+  </script>
+
+</body>
+</html>

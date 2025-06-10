@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>LocalStorage + Tema</title>
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      transition: 0.3s;
+    }
+
+    body.escuro {
+      background-color: #121212;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>LocalStorage Tema</h1>
+  <button onclick="alternarTema()">Alterar tema</button>
+
+  <script>
+    // Aplica o tema salvo ao carregar a página
+    const temaSalvo = localStorage.getItem("tema");
+    if (temaSalvo === "escuro") {
+      document.body.classList.add("escuro");
+    }
+
+    function alternarTema() {
+      document.body.classList.toggle("escuro");
+
+      // Salva ou remove tema no localStorage
+      if (document.body.classList.contains("escuro")) {
+        localStorage.setItem("tema", "escuro");
+      } else {
+        localStorage.setItem("tema", "claro");
+      }
+    }
+  </script>
+
+</body>
+</html>
